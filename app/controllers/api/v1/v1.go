@@ -1,9 +1,8 @@
-package controllers
+package v1
 
 import (
 	"github.com/revel/revel"
 	"github.com/shiro16/golang-bbs/app/utils"
-	_ "net/http"
 	"net/http"
 )
 
