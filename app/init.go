@@ -2,6 +2,7 @@ package app
 
 import (
 	"github.com/revel/revel"
+	"github.com/shiro16/golang-bbs/app/controllers"
 )
 
 var (
@@ -29,13 +30,13 @@ func init() {
 		revel.ActionInvoker,           // Invoke the action.
 	}
 
-
 	// register startup functions with OnAppStart
 	// revel.DevMode and revel.RunMode only work inside of OnAppStart. See Example Startup Script
 	// ( order dependent )
 	// revel.OnAppStart(ExampleStartupScript)
 	// revel.OnAppStart(InitDB)
 	// revel.OnAppStart(FillCache)
+	revel.OnAppStart(controllers.InitDB)
 }
 
 // HeaderFilter adds common security headers
