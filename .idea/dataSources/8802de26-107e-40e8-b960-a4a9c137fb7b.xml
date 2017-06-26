@@ -11,10 +11,10 @@
     <schema id="6" parent="1" name="news-topic"/>
     <schema id="7" parent="1" name="performance_schema"/>
     <schema id="8" parent="1" name="sales"/>
-    <schema id="9" parent="1" name="SuzukenGo">
+    <schema id="9" parent="1" name="vaz-career"/>
+    <schema id="10" parent="1" name="vaz-career2"/>
+    <schema id="11" parent="1" name="suzukengo">
       <Visible>1</Visible>
     </schema>
-    <schema id="10" parent="1" name="vaz-career"/>
-    <schema id="11" parent="1" name="vaz-career2"/>
   </database-model>
 </dataSource>

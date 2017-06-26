@@ -18,7 +18,7 @@ func InitDB() {
 	}
 
 	db.DB()
-	db.AutoMigrate(models.Comment{}) //ここでTableの作成を行っている
+	db.AutoMigrate(&models.Comment{}) //ここでTableの作成を行っている
 	DB = db
 }
 
