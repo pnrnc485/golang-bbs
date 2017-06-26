@@ -5,8 +5,8 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 	"github.com/revel/revel"
-	"github.com/shiro16/golang-bbs/app/models"
 	"log"
+	"bbs/app/models"
 )
 
 var DB *gorm.DB
@@ -18,7 +18,7 @@ func InitDB() {
 	}
 
 	db.DB()
-	db.AutoMigrate(&models.Comment{}) //ここでTableの作成を行っている
+	db.AutoMigrate(models.Comment{}) //ここでTableの作成を行っている
 	DB = db
 }
 

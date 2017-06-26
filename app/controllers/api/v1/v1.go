@@ -2,8 +2,8 @@ package v1
 
 import (
 	"github.com/revel/revel"
-	"github.com/shiro16/golang-bbs/app/utils"
 	"net/http"
+	"bbs/app/utils"
 )
 
 //埋め込みによる revel.Controllerをラップした　ApiV1Controllerを定義する

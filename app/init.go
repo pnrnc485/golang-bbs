@@ -2,7 +2,7 @@ package app
 
 import (
 	"github.com/revel/revel"
-	"github.com/shiro16/golang-bbs/app/controllers"
+	"bbs/app/controllers"
 )
 
 var (
