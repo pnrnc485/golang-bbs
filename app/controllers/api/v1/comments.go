@@ -34,8 +34,8 @@ func (c ApiV1Comments) Show(id int) revel.Result {
 	return c.RenderJSON(r)
 }
 
-func (c ApiV1Comments) Create() revel.Result {
-	comment := &models.Comment{}
+func (c ApiV1Comments) Create(nickname string, body string) revel.Result {
+	comment := &models.Comment{NickName:nickname, Body: body}
 
 	if err := c.BindParams(comment); err != nil {
 		return c.HandleBadRequestError(err.Error())
@@ -50,7 +50,7 @@ func (c ApiV1Comments) Create() revel.Result {
 	}
 
 	r := Response{comment}
-	return  c.Render(r)
+	return  c.RenderJSON(r)
 }
 
 func (c ApiV1Comments) Delete(id int) revel.Result {
